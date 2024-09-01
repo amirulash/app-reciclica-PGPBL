@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Reciclica</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list color="success">
+    <ion-item color="warning">
+      <ion-avatar slot="start">
+        <img src="https://img.icons8.com/?size=100&id=8k3Trc2fwNvk&format=png&color=000000" />
+      </ion-avatar>
+      <ion-label>
+        <h1>Zha Zha Catering</h1>
+        <p>Price: <span class="money">Rp 1.000.000</span></p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <app-pickup-call-card status="hold" updatedAt="28/08/2024 12:30:00" createdAt="25/08/2024"
+    notes="Menerima Pesanan Catering DIY">
+    <ion-card-header header>
+      <ion-card-subtitle>Last pickup call</ion-card-subtitle>
+    </ion-card-header>
+    <ion-button color="warning" fill="clear" size="full" footer (click)="goToPickupCalls()">See all...</ion-button>
+  </app-pickup-call-card>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="warning" (click)="newPickupCall()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
